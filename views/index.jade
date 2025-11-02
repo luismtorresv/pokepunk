@@ -1,5 +1,11 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  pre#pokenea
+  
+  script.
+    fetch('/api/pokenea')
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById('pokenea').textContent = JSON.stringify(data, null, 2);
+      });
