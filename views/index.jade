@@ -1,11 +1,11 @@
 extends layout
 
 block content
-  pre#pokenea
-  
+  pre#pokepunk
+
   script.
-    fetch('/api/pokenea')
+    fetch('/api/pokepunk')
       .then(res => res.json())
       .then(data => {
-        document.getElementById('pokenea').textContent = JSON.stringify(data, null, 2);
+        document.getElementById('pokepunk').textContent = JSON.stringify(data, null, 2);
       });

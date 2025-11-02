@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Pokepunk' });
 });
 
-router.get('/api/pokenea', function(req, res, next) {
+router.get('/api/pokepunk', function(req, res, next) {
   const pokemon = pokemons[Math.floor(Math.random() * pokemons.length)];
   res.json({
     id: pokemon.id,
