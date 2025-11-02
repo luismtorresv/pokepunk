@@ -1,10 +1,10 @@
-const pokemons = [
+const pokepunks = [
    {
     id: 1,
     name: 'Arbok',
     height: 1.2,
     ability: 'Shed Skin',
-    image: 'https://storage.googleapis.com/pokepunk-2025-2-ripjsb/pokemon/024-arbok.png',
+    image: 'https://storage.googleapis.com/pokepunk-2025-2-ripjsb/pokepunk/024-arbok.png',
     quote: 'I shed my past to move forward.'
   },
   {
@@ -12,7 +12,7 @@ const pokemons = [
     name: 'Ekans',
     height: 0.8,
     ability: 'Intimidate',
-    image: 'https://storage.googleapis.com/pokepunk-2025-2-ripjsb/pokemon/023-ekans.png',
+    image: 'https://storage.googleapis.com/pokepunk-2025-2-ripjsb/pokepunk/023-ekans.png',
     quote: 'Fear makes way for respect.'
   },
   {
@@ -20,7 +20,7 @@ const pokemons = [
     name: 'Fearow',
     height: 1.5,
     ability: 'Keen Eye',
-    image: 'https://storage.googleapis.com/pokepunk-2025-2-ripjsb/pokemon/022-fearow.png',
+    image: 'https://storage.googleapis.com/pokepunk-2025-2-ripjsb/pokepunk/022-fearow.png',
     quote: 'From above, nothing escapes my sight.'
   },
   {
@@ -28,7 +28,7 @@ const pokemons = [
     name: 'Kakuna',
     height: 0.6,
     ability: 'Shell Armor',
-    image: 'https://storage.googleapis.com/pokepunk-2025-2-ripjsb/pokemon/014-kakuna.png',
+    image: 'https://storage.googleapis.com/pokepunk-2025-2-ripjsb/pokepunk/014-kakuna.png',
     quote: 'Within this shell, I become something greater.'
   },
   {
@@ -36,7 +36,7 @@ const pokemons = [
     name: 'Beedrill',
     height: 2.0,
     ability: 'Swarm',
-    image: 'https://storage.googleapis.com/pokepunk-2025-2-ripjsb/pokemon/015-beedrill.png',
+    image: 'https://storage.googleapis.com/pokepunk-2025-2-ripjsb/pokepunk/015-beedrill.png',
     quote: 'Together we are unstoppable.'
   },
   {
@@ -44,7 +44,7 @@ const pokemons = [
     name: 'Caterpie',
     height: 1.6,
     ability: 'Shield Dust',
-    image: 'https://storage.googleapis.com/pokepunk-2025-2-ripjsb/pokemon/010-caterpie.png',
+    image: 'https://storage.googleapis.com/pokepunk-2025-2-ripjsb/pokepunk/010-caterpie.png',
     quote: 'Even the smallest can defend themselves.'
   },
   {
@@ -52,7 +52,7 @@ const pokemons = [
     name: 'Blastoise',
     height: 1.7,
     ability: 'Torrent',
-    image: 'https://storage.googleapis.com/pokepunk-2025-2-ripjsb/pokemon/009-blastoise.png',
+    image: 'https://storage.googleapis.com/pokepunk-2025-2-ripjsb/pokepunk/009-blastoise.png',
     quote: 'My power flows like water without limit.'
   },
   {
@@ -60,7 +60,7 @@ const pokemons = [
     name: 'Raichu',
     height: 2.0,
     ability: 'Static',
-    image: 'https://storage.googleapis.com/pokepunk-2025-2-ripjsb/pokemon/026-raichu.png',
+    image: 'https://storage.googleapis.com/pokepunk-2025-2-ripjsb/pokepunk/026-raichu.png',
     quote: 'I spark with endless energy.'
   },
   {
@@ -68,7 +68,7 @@ const pokemons = [
     name: 'Pikachu',
     height: 2.2,
     ability: 'Static',
-    image: 'https://storage.googleapis.com/pokepunk-2025-2-ripjsb/pokemon/025-pikachu.png',
+    image: 'https://storage.googleapis.com/pokepunk-2025-2-ripjsb/pokepunk/025-pikachu.png',
     quote: 'My electricity can light up the world.'
   },
   {
@@ -76,9 +76,9 @@ const pokemons = [
     name: 'Nidoran',
     height: 2.0,
     ability: 'Rivalry',
-    image: 'https://storage.googleapis.com/pokepunk-2025-2-ripjsb/pokemon/029-nidoran.png',
+    image: 'https://storage.googleapis.com/pokepunk-2025-2-ripjsb/pokepunk/029-nidoran.png',
     quote: 'My horns carry the strength of my determination.'
   }
 ];
 
-module.exports = pokemons;
+module.exports = pokepunks;

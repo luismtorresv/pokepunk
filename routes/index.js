@@ -1,21 +1,21 @@
 var express = require('express');
 var router = express.Router();
 var os = require('os');
-var pokemons = require('../data/pokepunk');
+var pokepunks = require('../data/pokepunks');
 
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Pokepunk' });
 });
 
 router.get('/api/pokepunk', function(req, res, next) {
-  const pokemon = pokemons[Math.floor(Math.random() * pokemons.length)];
+  const pokepunk = pokepunks[Math.floor(Math.random() * pokepunks.length)];
   res.json({
-    id: pokemon.id,
-    name: pokemon.name,
-    height: pokemon.height,
-    ability: pokemon.ability,
-    quote: pokemon.quote,
-    image: pokemon.image,
+    id: pokepunk.id,
+    name: pokepunk.name,
+    height: pokepunk.height,
+    ability: pokepunk.ability,
+    quote: pokepunk.quote,
+    image: pokepunk.image,
     container: os.hostname()
   });
 });
