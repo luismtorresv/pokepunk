@@ -10,13 +10,17 @@ router.get('/', function(req, res, next) {
 router.get('/api/pokepunk', function(req, res, next) {
   const pokepunk = pokepunks[Math.floor(Math.random() * pokepunks.length)];
   res.json({
-    id: pokepunk.id,
-    name: pokepunk.name,
-    height: pokepunk.height,
-    ability: pokepunk.ability,
-    quote: pokepunk.quote,
-    image: pokepunk.image,
-    container: os.hostname()
+    data: {
+      id: pokepunk.id,
+      name: pokepunk.name,
+      height: pokepunk.height,
+      ability: pokepunk.ability,
+      quote: pokepunk.quote,
+      image: pokepunk.image,
+    },
+    meta: {
+      container: os.hostname()
+    }
   });
 });
 
