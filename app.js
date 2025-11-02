@@ -24,7 +24,12 @@ app.use('/api', apiRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-  next(createError(404));
+  // only send stack trace if running in development
+  if (req.app.get('env') === 'development') {
+    next(createError(404));
+  }
+
+  res.status(404).send("Sorry, can't find that!");
 });
 
 // error handler
