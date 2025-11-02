@@ -34,12 +34,15 @@ header > .container > .links {
 
 /* Main */
 .main-content {
-  margin-bottom: 4rem;
+  min-width: 500px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 /* Footer */
 footer {
   text-align: center;
+  margin-top: 1rem;
   margin-bottom: 2rem;
 }
 
