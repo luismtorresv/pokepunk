@@ -8,9 +8,17 @@ during the 2025-1 semester. This project is AKA «pokenea».
 
 ## Installation
 
-> [!INFO]
->
-> TODO
+1. Build the Docker image:
+
+    ```shell
+    docker build --pull --tag pokepunk .
+    ```
+
+2. Run the container:
+
+    ```shell
+    docker run --detach --publish 80:80 pokepunk
+    ```
 
 ## Journal
 
