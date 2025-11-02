@@ -1,8 +1,85 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 2rem 2rem;
+  margin: 2rem 2rem;
 }
 
-a {
-  color: #00B7FF;
+/* Header */
+header {
+  position: static;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+}
+
+header > .container {
+  display: flex;
+  align-items: baseline;
+  max-width: 980px;
+  margin: 0 auto;
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+}
+
+header > .container > .title {
+  margin-right: auto;
+}
+
+header > .container > .links {
+  margin-left: auto;
+}
+
+/* Main */
+.main-content {
+  margin-bottom: 4rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+footer > #authors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+@media screen and (max-width: calc(980px - 4rem)) {
+  header > .container {
+    margin: 0 4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    margin: 2rem 0.5rem;
+    padding: 0;
+  }
+
+  header > .container {
+    margin: 0 0.5rem;
+  }
+}
+
+/* Content */
+div #pokepunk-flexbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div #pokepunk-image {
+  max-width: 500px;
+}
+
+div #pokepunk-metadata {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }

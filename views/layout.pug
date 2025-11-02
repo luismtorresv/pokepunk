@@ -2,6 +2,24 @@ doctype html
 html
   head
     title= 'Pokepunk'
+    link(rel='stylesheet', href='/stylesheets/nes.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    block content
+    block header
+      header
+        div(class='container')
+          div(class='title')
+            h1 Pokepunk
+            p Simple web app written in Express.
+          div(class='links')
+            a(href='/api/pokepunk', class='nes-btn is-primary') API
+
+    div(class='container')
+      main(class='main-content')
+        block content
+
+    block footer
+      footer
+        div#authors
+          i(class='nes-octocat animate')
+          p Written by Wendy and Luis.

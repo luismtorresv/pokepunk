@@ -1,6 +1,11 @@
 extends layout
 
 block content
-  img(src=pokepunk.data.image)
-  p #{pokepunk.data.quote}
-  p #{pokepunk.meta.container}
+  section(class='nes-container with-title is-centered')
+    h1(class='title') Random Pokepunk
+    div#pokepunk-flexbox
+      img#pokepunk-image(src=pokepunk.data.image, class='lazy')
+      p(class='nes-balloon') #{pokepunk.data.quote}
+      div#pokepunk-metadata
+        i(class='nes-pokeball')
+        p(class="nes-text is-primary") #{pokepunk.meta.container}
