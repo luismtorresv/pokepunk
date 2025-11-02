@@ -1,11 +1,6 @@
 extends layout
 
 block content
-  pre#pokepunk
-
-  script.
-    fetch('/api/pokepunk')
-      .then(res => res.json())
-      .then(data => {
-        document.getElementById('pokepunk').textContent = JSON.stringify(data, null, 2);
-      });
+  img(src=pokepunk.data.image)
+  p #{pokepunk.data.quote}
+  p #{pokepunk.meta.container}
