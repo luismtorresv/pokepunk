@@ -8,5 +8,8 @@
   },
   "keywords": [],
   "private": true,
-  "license": "Unlicense"
+  "license": "Unlicense",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }
